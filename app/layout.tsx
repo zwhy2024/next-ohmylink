@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
-import { Inter, Ubuntu_Mono, Ubuntu } from 'next/font/google'
+import { Ubuntu } from 'next/font/google'
 import './globals.css'
+import clsx from 'clsx'
 
-const inter = Inter({ subsets: ['latin'] })
 const ubuntu = Ubuntu({
   weight: '400',
   subsets: ['latin'],
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={ubuntu.className}>{children}</body>
+      <body className={clsx(ubuntu.className, 'overflow-hidden')}>{children}</body>
     </html>
   )
 }
