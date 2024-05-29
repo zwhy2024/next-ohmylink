@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={clsx(ubuntu.className, 'overflow-hidden')}>{children}</body>
+      <body className={ubuntu.className}>{children}</body>
     </html>
   )
 }
