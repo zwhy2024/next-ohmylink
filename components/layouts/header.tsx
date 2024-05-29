@@ -10,7 +10,7 @@ export const Header: React.FC = () => {
           <nav className="flex items-center max-md:hidden">
             <Link href="/how-it-works">How It Works</Link>
             <Link href="/pricing">Pricing</Link>
-            <Link href="extensions">Extensions</Link>
+            <Link href="/extensions">Extensions</Link>
           </nav>
         </div>
         <div className='flex items-center max-md:hidden'>

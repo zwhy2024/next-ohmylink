@@ -13,14 +13,16 @@ export const Link: React.FC<PropsWithChildren<Props>> = ({
   children,
 }) => {
   const pathname = usePathname()
-  const isActive = pathname === href
+  const isActive = href === pathname
+  console.log(href === pathname);
+  
   return (
     <a
       href={href}
       className={clsx(
-        'mx-[15px] py-[20px] box-border transition-all duration-200 border-b-2 border-b-transparent text-[#929292] text-base hover:border-b-[#3673fc] hover:text-[#1a1a1a]',
+        'mx-[15px] py-[20px] box-border transition-all duration-200 border-b-2 text-[#929292] text-base hover:border-b-[#3673fc] hover:text-[#1a1a1a]',
         className,
-        isActive && 'border-b-[#3673fc]'
+        isActive ? 'border-b-[#3673fc]' : 'border-b-transparent'
       )}
     >
       {children}
