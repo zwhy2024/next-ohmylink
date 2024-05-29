@@ -1,6 +1,5 @@
-import { SVGProps, memo } from 'react'
+import { memo } from 'react'
 
-// type Props = React.SVFP | SVGProps
 type IconProps = React.HTMLAttributes<SVGElement> | React.SVGProps<SVGSVGElement>
 
 export const Icons = {
