@@ -13,7 +13,7 @@ export const Header: React.FC = () => {
             <Link href="/c">Extensions</Link>
           </nav>
         </div>
-        <div className='flex max-md:hidden'>
+        <div className='flex items-center max-md:hidden'>
           <Link href='/sign-in'>Sign In</Link>
           <Link href='/sign-up'>Sign Up</Link>
         </div>
