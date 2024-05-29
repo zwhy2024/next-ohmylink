@@ -1,7 +1,7 @@
 import { PropsWithChildren } from 'react'
-import { Header } from './header'
+import { Header } from '../../components/layouts/header'
 
-export const MainLayout: React.FC<PropsWithChildren> = ({ children }) => {
+const Layout: React.FC<PropsWithChildren> = ({ children }) => {
   return (
     <>
       <Header />
@@ -11,3 +11,5 @@ export const MainLayout: React.FC<PropsWithChildren> = ({ children }) => {
     </>
   )
 }
+
+export default Layout

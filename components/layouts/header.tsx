@@ -14,8 +14,8 @@ export const Header: React.FC = () => {
           </nav>
         </div>
         <div className='flex items-center max-md:hidden'>
-          <Link href='/sign-in'>Sign In</Link>
-          <Link href='/sign-up'>Sign Up</Link>
+          <Link href='/login'>Sign In</Link>
+          <Link href='/register'>Sign Up</Link>
         </div>
       </div>
     </header>
