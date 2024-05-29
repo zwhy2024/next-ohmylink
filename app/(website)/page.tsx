@@ -30,12 +30,12 @@ export default function Index() {
                 autoCapitalize="none"
                 autoCorrect="off"
                 autoComplete="off"
-                className="shadow-[0_25px_40px_rgba(0,0,0,0.08)] outline-none min-h-[60px] mb-0 pl-[70px] text-[16px] transition-all duration-300 focus:border-l-4 focus:border-[#3673fc] border-l-4 border-transparent"
+                className="rounded-none shadow-[0_25px_40px_rgba(0,0,0,0.08)] outline-none min-h-[60px] mb-0 pl-[70px] text-[16px] transition-all duration-300 focus:border-l-4 focus:border-[#3673fc] border-l-4 border-transparent"
               />
               <input
                 type="submit"
                 value="Join for Free"
-                className="shadow-[0_25px_40px_rgba(0,0,0,0.08)] max-md:w-full font-medium h-[60px] bg-[#3673fc] px-[15px] text-white text-[16px] flex justify-center items-center cursor-pointer"
+                className="rounded-none shadow-[0_25px_40px_rgba(0,0,0,0.08)] max-md:w-full font-medium h-[60px] bg-[#3673fc] px-[15px] text-white text-[16px] flex justify-center items-center cursor-pointer"
               />
             </div>
           </form>
