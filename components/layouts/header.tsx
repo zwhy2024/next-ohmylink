@@ -3,7 +3,7 @@ import { Link } from '../link'
 
 export const Header: React.FC = () => {
   return (
-    <header className="sticky top-0 w-full h-[65px] bg-white border-b backdrop-blur-xl border-[#e4e4e4] box-border">
+    <header className="w-full h-[65px] bg-white border-b backdrop-blur-xl border-[#e4e4e4] box-border">
       <div className="max-md:w-[85%] md:w-[75%] mx-auto h-full flex items-center justify-between">
         <div className="flex items-center">
           {/* <h1 className='mr-[25px]'>
