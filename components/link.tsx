@@ -14,8 +14,6 @@ export const Link: React.FC<PropsWithChildren<Props>> = ({
 }) => {
   const pathname = usePathname()
   const isActive = href === pathname
-  console.log(href === pathname);
-  
   return (
     <a
       href={href}
