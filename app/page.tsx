@@ -29,7 +29,7 @@ export default function Index() {
                   htmlFor="username"
                   className="absolute h-[60px] ml-1 px-3 text-[16px] font-[500] flex justify-center items-center"
                 >
-                  ohmylink.cn/
+                  oml.lol/
                 </label>
                 <input
                   type="text"
@@ -41,7 +41,7 @@ export default function Index() {
                   autoCapitalize="none"
                   autoCorrect="off"
                   autoComplete="off"
-                  className="shadow-[0_25px_40px_rgba(0,0,0,0.08)] outline-none min-h-[60px] mb-0 pl-[106px] text-[16px] transition-all duration-300 focus:border-l-4 focus:border-[#3673fc] border-l-4 border-transparent"
+                  className="shadow-[0_25px_40px_rgba(0,0,0,0.08)] outline-none min-h-[60px] mb-0 pl-[70px] text-[16px] transition-all duration-300 focus:border-l-4 focus:border-[#3673fc] border-l-4 border-transparent"
                 />
                 <input
                   type="submit"
