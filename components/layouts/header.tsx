@@ -44,7 +44,7 @@ export const Header: React.FC = () => {
                 transition: 'visibility 0s 200ms, opacity 200ms linear',
               }
         }
-        className="md:hidden h-[calc(100vh-65px)] transition-opacity duration-200 ease-linear fixed top-[65px] bottom-0 left-0 right-0 z-20 bg-white w-full border-b-4 border-b-[#3673fc] overflow-hidden pb-[20px]"
+        className="md:hidden min-h-[calc(100vh-(env(safe-area-inset-bottom)+65px))] absolute top-[65px] bottom-0 left-0 right-0 z-20 bg-white w-full border-b-4 border-b-[#3673fc] overflow-hidden pb-[20px]"
       >
         <nav className="flex flex-col justify-center border-b border-b-[#e4e4e4]">
           <a
