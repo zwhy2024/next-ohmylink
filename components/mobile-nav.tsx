@@ -47,8 +47,8 @@ export const MobileNav: React.FC = ({}) => {
         <NavLink href="/extensions">Extensions</NavLink>
       </nav>
       <nav className="flex flex-col justify-center">
-        <NavLink href="/login">Sign In</NavLink>
-        <NavLink href="/register">Sign Up</NavLink>
+        <NavLink href="/sign-in">Sign In</NavLink>
+        <NavLink href="/sign-up">Sign Up</NavLink>
       </nav>
     </div>
   )
