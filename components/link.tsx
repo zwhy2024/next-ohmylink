@@ -18,9 +18,9 @@ export const Link: React.FC<PropsWithChildren<Props>> = ({
     <a
       href={href}
       className={clsx(
-        'mx-[15px] py-[20px] box-border transition-all duration-200 border-b-2 text-[#929292] text-base hover:border-b-[#3673fc] hover:text-[#1a1a1a]',
+        'mx-[15px] py-[20px] box-border transition-all duration-200 border-b-2 text-base hover:border-b-[#3673fc] hover:text-[#1a1a1a]',
         className,
-        isActive ? 'border-b-[#3673fc]' : 'border-b-transparent'
+        isActive ? 'border-b-[#3673fc] text-[#1a1a1a]' : 'border-b-transparent text-[#929292]'
       )}
     >
       {children}
