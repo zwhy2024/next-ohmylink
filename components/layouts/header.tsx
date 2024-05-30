@@ -1,86 +1,24 @@
-'use client'
 import { Brand } from '../brand'
-import { Icons } from '../icons'
 import { Link } from '../link'
-import { useMobileMenuStore } from '../../hooks/useMobileMenu'
+import { Nav } from '../nav'
+import { MobileNav } from '../mobile-nav'
+import { MenuButton } from '../menu-button'
 
 export const Header: React.FC = () => {
-  const { visible, setVisible } = useMobileMenuStore()
-
   return (
     <header className="w-full h-[65px] bg-white border-b backdrop-blur-xl border-[#e4e4e4] box-border relative z-10">
       <div className="max-md:w-[85%] md:w-[75%] mx-auto h-full flex items-center justify-between">
         <div className="flex items-center">
           <Brand />
-          <nav className="flex items-center max-md:hidden">
-            <Link href="/how-it-works">How It Works</Link>
-            <Link href="/pricing">Pricing</Link>
-            <Link href="/extensions">Extensions</Link>
-          </nav>
+          <Nav />
         </div>
         <div className="flex items-center max-md:hidden">
           <Link href="/login">Sign In</Link>
           <Link href="/register">Sign Up</Link>
         </div>
-        <button
-          type="button"
-          className="md:hidden"
-          onClick={() => setVisible(!visible)}
-        >
-          {visible ? <Icons.close /> : <Icons.menu />}
-        </button>
+        <MenuButton />
       </div>
-      <div
-        style={
-          visible
-            ? {
-                visibility: 'visible',
-                opacity: 1,
-                transition: 'opacity 200ms linear',
-              }
-            : {
-                visibility: 'hidden',
-                opacity: 0,
-                transition: 'visibility 0s 200ms, opacity 200ms linear',
-              }
-        }
-        className="md:hidden min-h-[calc(100vh-(env(safe-area-inset-bottom)+65px))] absolute top-[65px] bottom-0 left-0 right-0 z-20 bg-white w-full border-b-4 border-b-[#3673fc] overflow-hidden pb-[20px]"
-      >
-        <nav className="flex flex-col justify-center border-b border-b-[#e4e4e4]">
-          <a
-            className="py-[18px] px-[7.5%] text-[16px] text-[#929292] active:text-[#1a1a1a]"
-            href="/how-it-works"
-          >
-            How It Works
-          </a>
-          <a
-            className="py-[18px] px-[7.5%] text-[16px] text-[#929292] active:text-[#1a1a1a]"
-            href="/how-it-works"
-          >
-            Pricing
-          </a>
-          <a
-            className="py-[18px] px-[7.5%] text-[16px] text-[#929292] active:text-[#1a1a1a]"
-            href="/how-it-works"
-          >
-            Extensions
-          </a>
-        </nav>
-        <nav className="flex flex-col justify-center">
-          <a
-            className="py-[18px] px-[7.5%] text-[16px] text-[#929292] active:text-[#1a1a1a]"
-            href="/login"
-          >
-            Sign In
-          </a>
-          <a
-            className="py-[18px] px-[7.5%] text-[16px] text-[#929292] active:text-[#1a1a1a]"
-            href="/register"
-          >
-            Sign Up
-          </a>
-        </nav>
-      </div>
+      <MobileNav />
     </header>
   )
 }
