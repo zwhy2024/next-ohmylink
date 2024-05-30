@@ -9,7 +9,7 @@ const Layout: React.FC<PropsWithChildren> = ({ children }) => {
   return (
     <>
       <Header />
-      <main className={clsx('h-[calc(100vh-65px)] w-full', visible && 'h-0 overflow-hidden')}>
+      <main className={clsx('min-h-[calc(100vh-65px)] w-full', visible && 'fixed')}>
         {children}
       </main>
     </>
