@@ -30,7 +30,7 @@ export default function Index() {
                 autoCapitalize="none"
                 autoCorrect="off"
                 autoComplete="off"
-                className="rounded-none shadow-[0_25px_40px_rgba(0,0,0,0.08)] outline-none min-h-[60px] mb-0 pl-[68px] text-[16px] transition-all duration-300 focus:border-l-4 focus:border-[#3673fc] border-l-4 border-transparent"
+                className="rounded-none shadow-[0_25px_40px_rgba(0,0,0,0.08)] text-[#1a1a1a] text-[16px] placeholder:text-[#929292] outline-none min-h-[60px] mb-0 pl-[68px] transition-all duration-300 focus:border-l-4 focus:border-[#3673fc] border-l-4 border-transparent"
               />
               <input
                 type="submit"
