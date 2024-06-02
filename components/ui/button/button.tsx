@@ -19,7 +19,7 @@ export const Button: React.FC<React.PropsWithChildren<Props>> = ({
       type={type}
       disabled={isLoading}
       className={clsx(
-        'text-white rounded-md text-base transition-[border-color] duration-300 button',
+        'text-base, rounded-md',
         `${s['btn']} ${s[level]}`,
         className
       )}>

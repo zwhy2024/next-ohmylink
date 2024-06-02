@@ -21,6 +21,9 @@ export default function SignIn() {
               <Button level="primary" type="submit">
                 Sign In
               </Button>
+              <Button level="secondary" type="button">
+                Sign Up
+              </Button>
             </form>
           </div>
         </div>
