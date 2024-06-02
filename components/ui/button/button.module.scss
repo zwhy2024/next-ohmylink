@@ -1,0 +1,21 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 48px;
+  padding: 8px 16px;
+  &[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+  &.primary {
+    background-color: #3673fc;
+  }
+  &.secondary {
+    background-color: #ffffff;
+    border: 1px solid #929292;
+    color: #1a1a1a;
+  }
+}

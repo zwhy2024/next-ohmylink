@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/button/button'
 import { Input } from '@/components/ui/input'
 
 export default function SignIn() {
@@ -17,11 +18,9 @@ export default function SignIn() {
             <form className="w-full flex flex-col items-stretch gap-5">
               <Input required type="email" placeholder="Email" />
               <Input required type="password" placeholder="Password" />
-              <input
-                type="submit"
-                value="Sign In"
-                className="my-[20px] bg-[#3673fc] flex justify-center items-center h-[48px] rounded-md px-[50px] text-[16px] text-white transition-[border-color] duration-300 cursor-pointer"
-              />
+              <Button level="primary" type="submit">
+                Sign In
+              </Button>
             </form>
           </div>
         </div>
