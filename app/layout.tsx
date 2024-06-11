@@ -20,8 +20,15 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={clsx('bg-[#f4f4f7]', ubuntu.className)}>{children}</body>
+    <html lang="en" className="h-full">
+      <body
+        className={clsx(
+          'bg-[#f4f4f7] antialiased w-full overflow-x-hidden text-sm',
+          ubuntu.className
+        )}
+      >
+        {children}
+      </body>
     </html>
   )
 }
