@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Ubuntu } from 'next/font/google'
 import clsx from 'clsx'
-import './globals.css'
+import '../styles/global.css'
 
 const ubuntu = Ubuntu({
   weight: '400',
@@ -23,8 +23,7 @@ export default function RootLayout({
     <html lang="en" className="h-full">
       <body
         className={clsx(
-          'bg-[#f4f4f7] antialiased w-full overflow-x-hidden text-sm',
-          ubuntu.className
+          'bg-[#f4f4f7] antialiased w-full overflow-x-hidden text-sm'
         )}
       >
         {children}

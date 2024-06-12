@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --blackbg-color: #161517;
+  --dark-color: #0d0c22;
+  --blue-color: #0095f6;
+  --blue-dark-color: #0075e4;
+  --danger-color: #ff4963;
+  --primary-color: #0095f6;
+  --grey-color: #6e6d7a;
+  --greybg-color: #e7e7e9;
+  --success-color: #70c050;
+  --btngrey-color: #f3f3f4;
+}
+
+html {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  line-height: 1.5;
+}
+
+body {
+  font-family: inherit;
+  line-height: inherit;
+}
